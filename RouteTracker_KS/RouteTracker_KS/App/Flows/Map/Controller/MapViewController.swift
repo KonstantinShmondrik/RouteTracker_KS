@@ -6,12 +6,30 @@
 //
 
 import UIKit
+import GoogleMaps
+
 
 class MapViewController: UIViewController {
+    
+    private var mapView: MapView {
+        return self.view as! MapView
+    }
+    
+    
+    // MARK: - Lifecycle
+
+    override func loadView() {
+        super.loadView()
+        let view = MapView()
+//        view.delegate = self
+        self.view = view
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        
     }
 
 

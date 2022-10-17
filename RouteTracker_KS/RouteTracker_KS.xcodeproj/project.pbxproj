@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		005C000328FD8E95009A49A9 /* StartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C000228FD8E95009A49A9 /* StartManager.swift */; };
+		005C000628FD9BFC009A49A9 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 005C000528FD9BFC009A49A9 /* GoogleMaps */; };
+		005C000828FDA4F7009A49A9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C000728FDA4F7009A49A9 /* MapView.swift */; };
 		005CFFE228FD85C3009A49A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE128FD85C3009A49A9 /* AppDelegate.swift */; };
 		005CFFE428FD85C3009A49A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */; };
 		005CFFE628FD85C3009A49A9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE528FD85C3009A49A9 /* MapViewController.swift */; };
@@ -17,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		005C000228FD8E95009A49A9 /* StartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartManager.swift; sourceTree = "<group>"; };
+		005C000728FDA4F7009A49A9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		005CFFDE28FD85C3009A49A9 /* RouteTracker_KS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteTracker_KS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005CFFE128FD85C3009A49A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005C000628FD9BFC009A49A9 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,7 @@
 		005CFFFC28FD8CF0009A49A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				005C000728FDA4F7009A49A9 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +192,9 @@
 			dependencies = (
 			);
 			name = RouteTracker_KS;
+			packageProductDependencies = (
+				005C000528FD9BFC009A49A9 /* GoogleMaps */,
+			);
 			productName = RouteTracker_KS;
 			productReference = 005CFFDE28FD85C3009A49A9 /* RouteTracker_KS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 005CFFD528FD85C3009A49A9;
+			packageReferences = (
+				005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+			);
 			productRefGroup = 005CFFDF28FD85C3009A49A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +254,7 @@
 			files = (
 				005CFFE628FD85C3009A49A9 /* MapViewController.swift in Sources */,
 				005CFFE228FD85C3009A49A9 /* AppDelegate.swift in Sources */,
+				005C000828FDA4F7009A49A9 /* MapView.swift in Sources */,
 				005C000328FD8E95009A49A9 /* StartManager.swift in Sources */,
 				005CFFE428FD85C3009A49A9 /* SceneDelegate.swift in Sources */,
 			);
@@ -452,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		005C000528FD9BFC009A49A9 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 005CFFD628FD85C3009A49A9 /* Project object */;
 }
