@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005C000328FD8E95009A49A9 /* StartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C000228FD8E95009A49A9 /* StartManager.swift */; };
+		005C000628FD9BFC009A49A9 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 005C000528FD9BFC009A49A9 /* GoogleMaps */; };
+		005C000828FDA4F7009A49A9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C000728FDA4F7009A49A9 /* MapView.swift */; };
 		005CFFE228FD85C3009A49A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE128FD85C3009A49A9 /* AppDelegate.swift */; };
 		005CFFE428FD85C3009A49A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */; };
-		005CFFE628FD85C3009A49A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE528FD85C3009A49A9 /* ViewController.swift */; };
-		005CFFE928FD85C3009A49A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFE728FD85C3009A49A9 /* Main.storyboard */; };
+		005CFFE628FD85C3009A49A9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005CFFE528FD85C3009A49A9 /* MapViewController.swift */; };
 		005CFFEB28FD85C8009A49A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFEA28FD85C8009A49A9 /* Assets.xcassets */; };
 		005CFFEE28FD85C8009A49A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFEC28FD85C8009A49A9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005C000228FD8E95009A49A9 /* StartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartManager.swift; sourceTree = "<group>"; };
+		005C000728FDA4F7009A49A9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		005CFFDE28FD85C3009A49A9 /* RouteTracker_KS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteTracker_KS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005CFFE128FD85C3009A49A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		005CFFE528FD85C3009A49A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		005CFFE828FD85C3009A49A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		005CFFE528FD85C3009A49A9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		005CFFEA28FD85C8009A49A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005CFFED28FD85C8009A49A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005CFFEF28FD85C8009A49A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,12 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005C000628FD9BFC009A49A9 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005C000028FD8D91009A49A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFEA28FD85C8009A49A9 /* Assets.xcassets */,
+				005CFFEC28FD85C8009A49A9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		005C000128FD8DB2009A49A9 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFEF28FD85C8009A49A9 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
 		005CFFD528FD85C3009A49A9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +77,103 @@
 		005CFFE028FD85C3009A49A9 /* RouteTracker_KS */ = {
 			isa = PBXGroup;
 			children = (
-				005CFFE128FD85C3009A49A9 /* AppDelegate.swift */,
-				005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */,
-				005CFFE528FD85C3009A49A9 /* ViewController.swift */,
-				005CFFE728FD85C3009A49A9 /* Main.storyboard */,
-				005CFFEA28FD85C8009A49A9 /* Assets.xcassets */,
-				005CFFEC28FD85C8009A49A9 /* LaunchScreen.storyboard */,
-				005CFFEF28FD85C8009A49A9 /* Info.plist */,
+				005CFFF528FD8C3C009A49A9 /* App */,
+				005CFFFD28FD8D52009A49A9 /* Core */,
+				005C000028FD8D91009A49A9 /* Resources */,
+				005C000128FD8DB2009A49A9 /* Environments */,
 			);
 			path = RouteTracker_KS;
+			sourceTree = "<group>";
+		};
+		005CFFF528FD8C3C009A49A9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFE128FD85C3009A49A9 /* AppDelegate.swift */,
+				005CFFE328FD85C3009A49A9 /* SceneDelegate.swift */,
+				005CFFF628FD8C5A009A49A9 /* BusinessLogic */,
+				005CFFF828FD8C8E009A49A9 /* Entity */,
+				005CFFF928FD8CAB009A49A9 /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		005CFFF628FD8C5A009A49A9 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFF728FD8C75009A49A9 /* AppStartManager */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		005CFFF728FD8C75009A49A9 /* AppStartManager */ = {
+			isa = PBXGroup;
+			children = (
+				005C000228FD8E95009A49A9 /* StartManager.swift */,
+			);
+			path = AppStartManager;
+			sourceTree = "<group>";
+		};
+		005CFFF828FD8C8E009A49A9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		005CFFF928FD8CAB009A49A9 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFFA28FD8CD6009A49A9 /* Map */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		005CFFFA28FD8CD6009A49A9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFFB28FD8CE6009A49A9 /* Controller */,
+				005CFFFC28FD8CF0009A49A9 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		005CFFFB28FD8CE6009A49A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFE528FD85C3009A49A9 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005CFFFC28FD8CF0009A49A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				005C000728FDA4F7009A49A9 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005CFFFD28FD8D52009A49A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				005CFFFF28FD8D82009A49A9 /* UIComponents */,
+				005CFFFE28FD8D75009A49A9 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		005CFFFE28FD8D75009A49A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		005CFFFF28FD8D82009A49A9 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +192,9 @@
 			dependencies = (
 			);
 			name = RouteTracker_KS;
+			packageProductDependencies = (
+				005C000528FD9BFC009A49A9 /* GoogleMaps */,
+			);
 			productName = RouteTracker_KS;
 			productReference = 005CFFDE28FD85C3009A49A9 /* RouteTracker_KS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 005CFFD528FD85C3009A49A9;
+			packageReferences = (
+				005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+			);
 			productRefGroup = 005CFFDF28FD85C3009A49A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +242,6 @@
 			files = (
 				005CFFEE28FD85C8009A49A9 /* LaunchScreen.storyboard in Resources */,
 				005CFFEB28FD85C8009A49A9 /* Assets.xcassets in Resources */,
-				005CFFE928FD85C3009A49A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005CFFE628FD85C3009A49A9 /* ViewController.swift in Sources */,
+				005CFFE628FD85C3009A49A9 /* MapViewController.swift in Sources */,
 				005CFFE228FD85C3009A49A9 /* AppDelegate.swift in Sources */,
+				005C000828FDA4F7009A49A9 /* MapView.swift in Sources */,
+				005C000328FD8E95009A49A9 /* StartManager.swift in Sources */,
 				005CFFE428FD85C3009A49A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +263,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		005CFFE728FD85C3009A49A9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				005CFFE828FD85C3009A49A9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		005CFFEC28FD85C8009A49A9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +397,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8K8YS2863;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RouteTracker_KS/Info.plist;
+				INFOPLIST_FILE = RouteTracker_KS/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +424,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8K8YS2863;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RouteTracker_KS/Info.plist;
+				INFOPLIST_FILE = RouteTracker_KS/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		005C000528FD9BFC009A49A9 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 005C000428FD9BFC009A49A9 /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 005CFFD628FD85C3009A49A9 /* Project object */;
 }
